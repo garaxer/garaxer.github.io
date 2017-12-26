@@ -9,7 +9,7 @@ var card = {
   picture:  "images/gary_pc.png",
   name:     "Gary Bagnall",
   position: "Student Programmer",
-  company:  new Site("github.com/garaxer", "images/ephox_logo.png"),
+  company:  new Site("http://github.com/garaxer", "images/g.png"),
   email:    "gbagnall8@gmail.com"
 }
 
