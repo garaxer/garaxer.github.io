@@ -32,7 +32,7 @@ var fillCard = (c) => {
   position.innerHTML = c.position;
 
   var companyLink = document.getElementById("companyLink");
-  companyLink.setAttribute("href", c.company.url);
+  //companyLink.setAttribute("href", c.company.url);
 
   var companyLogo = document.getElementById("companyLogo");
   companyLogo.setAttribute("src", c.company.icon);
