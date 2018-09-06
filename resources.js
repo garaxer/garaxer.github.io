@@ -8,7 +8,7 @@ function Site(url, icon) {
 var card = {
   picture:  "images/gary_pc.png",
   name:     "Gary Bagnall",
-  position: "Student Programmer",
+  position: "Programmer",
   company:  new Site("http://github.com/garaxer", "images/g.png"),
   email:    "gbagnall8@gmail.com"
 }
@@ -32,7 +32,7 @@ var fillCard = (c) => {
   position.innerHTML = c.position;
 
   var companyLink = document.getElementById("companyLink");
-  companyLink.setAttribute("href", c.company.url);
+  //companyLink.setAttribute("href", c.company.url);
 
   var companyLogo = document.getElementById("companyLogo");
   companyLogo.setAttribute("src", c.company.icon);
