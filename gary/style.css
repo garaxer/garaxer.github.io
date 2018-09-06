@@ -1,0 +1,71 @@
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.gary {
+  width: 30%;
+  max-width: 500px;
+  user-select: none;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.gary > div {
+  font-family: sans-serif;
+  font-size: 2rem;
+  visibility: hidden;
+  margin-top: 1rem;
+}
+
+.gary > img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.gary.inactive:hover > img {
+  box-shadow: 5px 5px 20px;
+}
+
+.gary.inactive:hover > div {
+  visibility: visible;
+}
+
+.gary.active {
+  animation: spin 1s infinite linear;
+}
+
+.gary.active > img {
+  animation: grow 0.5s infinite ease-in-out;
+}
+
+.gary.active.bye > img {
+  animation: hinge 1s 1 linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(359deg);}
+}
+
+@keyframes grow {
+  0%   { transform: scaleX(1) scaleY(1); box-shadow: 0px 0px 200px blue;}
+  50%  { transform: scaleX(1.5) scaleY(1.5); box-shadow: 0px 0px 200px red;}
+  100% { transform: scaleX(1) scaleY(1); box-shadow: 0px 0px 200px blue;}
+}
+
+@keyframes hinge {
+  to {
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes bg {
+	from { background-position: 0 0; }
+	to { background-position: 200px 0; }
+}
