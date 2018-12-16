@@ -1,7 +1,7 @@
 $(window).load(() => {
-  $.getJSON('https://garaxer.github.io/json', (gary) => {
+  //$.getJSON('https://garaxer.github.io/json', (gary) => {
     $(".picture").attr("src", gary.picture);
-    $(".picture").click(() => window.open('./json'));
+    $(".picture").click(() => window.open('./json/index.json'));
     $(".name").text(gary.name);
     $(".position").text(gary.position);
     $(".email").text(gary.email);
@@ -12,4 +12,4 @@ $(window).load(() => {
       $("." + k).click(() => window.open(v.base + v.user));
     });
   });
-})
+//})
