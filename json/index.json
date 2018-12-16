@@ -2,7 +2,7 @@
   "name": "Gary Bagnall",
   "picture": "src/images/gary.jpg",
   "email": "gbagnall8@gmail.com",
-  "position": "Seeking software developer position.",
+  "position": "Seeking software development position.",
   "company": {
     "name": "",
     "url": "",
@@ -15,7 +15,7 @@
     },
     "linkedin": {
       "base": "https://www.linkedin.com/in/",
-      "user": "gary-bagnall-504859a5"
-    },
+      "user": "gary-bagnall-504859a5/"
+    }
   }
 }
