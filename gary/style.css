@@ -1,3 +1,10 @@
+
+body.active {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('gary.png');
+  background-size: 200px;
+  animation: bg 0.2s linear infinite;
+}
+
 .container {
   display: grid;
   height: 100%;
@@ -26,12 +33,24 @@
   border-radius: 1rem;
 }
 
+.gary.inactive > img {
+  box-shadow: 10px 10px 20px;
+}
+
 .gary.inactive:hover > img {
-  box-shadow: 5px 5px 20px;
+  box-shadow: none;
+  transform: translatey(5px);
+  box-shadow: 5px 5px 10px;
+  cursor: pointer;
 }
 
 .gary.inactive:hover > div {
   visibility: visible;
+}
+
+.gary.inactive:active > img {
+  transform: translatey(10px);
+  box-shadow: none;
 }
 
 .gary.active {
