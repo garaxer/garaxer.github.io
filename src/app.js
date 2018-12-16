@@ -1,5 +1,5 @@
 $(window).load(() => {
-  $.getJSON('https://garaxer.github.io/json', (gary) => {
+  $.getJSON('http://garaxer.github.io/json', (gary) => {
     $(".picture").attr("src", gary.picture);
     $(".picture").click(() => window.open('./json'));
     $(".name").text(gary.name);
