@@ -1,0 +1,114 @@
+body {
+	background-color: #fff;
+	font-family: "Raleway", sans-serif;
+	margin: 0;
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.container {
+	background-color: #484848;
+	padding: 2rem;
+	box-shadow: 10px 10px 40px grey;
+	border-radius: 20px;
+}
+
+.card {
+	max-width: 730px;
+	display: grid;
+	grid-template-columns: 1fr 1.5fr;
+	grid-gap: 2.5rem;
+	color: white;
+}
+
+.name {
+	font-size: 4rem;
+	margin-bottom: 2.5rem;
+	font-weight: 200;
+}
+
+.position,
+.email {
+	display: inline-block;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.picture {
+	width: 100%;
+	border-radius: 50%;
+	grid-row: 1/3;
+}
+
+.sites {
+	display: flex;
+	justify-content: space-between;
+  align-self: end;
+  margin-right: 3rem;
+}
+
+.sites>* {
+	height: 2.5rem;
+}
+
+.button {
+	filter: drop-shadow(2px 2px 3px #222);
+	color: white;
+}
+
+.button:hover {
+	cursor: pointer;
+	filter: none;
+	transform: translatey(2px)
+}
+
+.button:active {
+	transform: translatey(4px);
+}
+
+@media screen and (max-width: 900px) {
+	.card {
+		grid-template-columns: 1fr;
+		text-align: center;
+		grid-gap: 1rem;
+	}
+
+	.name {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+	}
+
+	.company {
+		height: 1.5rem;
+		margin: 0 auto 0.5rem;
+	}
+
+	.position,
+	.email {
+		font-size: 1.2rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.sites {
+    grid-column: 1;
+    margin-right: 0;
+	}
+
+	.sites>* {
+		margin: 0.7rem;
+		height: 1.5rem;
+	}
+
+	.resume {
+		grid-column: 1;
+	}
+
+	.picture {
+		width: 15rem;
+		margin: auto;
+	}
+}

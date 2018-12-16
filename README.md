@@ -1,2 +1,2 @@
-# garaxer.github.io
-# Portfolio website
+# Gary Bagnall's Resume site. 
+# Forked from idempotency
