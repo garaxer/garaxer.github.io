@@ -1,6 +1,6 @@
 const gary = {
   "name": "Gary Bagnall",
-  "picture": "src/images/gary.jpeg",
+  "picture": "src/images/gary.jpg",
   "email": "gbagnall8@gmail.com",
   "position": "Seeking software development position.",
   "company": {
